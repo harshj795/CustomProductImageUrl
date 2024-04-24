@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Block\Product\ImageFactory">
+        <plugin name="change_product_image_url" type="Azguards\CustomProductImage\Plugin\ProductImage" />
+    </type>
+
+     <type name="Magento\Catalog\Block\Product\View\Gallery">
+        <plugin name="change_gallery_image" type="Azguards\CustomProductImage\Plugin\UpdateGalleryImage" />
+    </type>
+   
+    <type name="Magento\Checkout\CustomerData\AbstractItem">
+        <plugin name="change_minicart_image" type="Azguards\CustomProductImage\Plugin\Minicart\AfterGetItemData"/>
+    </type>
+
+    <preference for="Azguards\CustomProductImage\Api\ProductTypeInterface" type="Azguards\CustomProductImage\Model\ProductType"/>
+
+</config>
