@@ -9,7 +9,7 @@
     </type>
    
     <type name="Magento\Checkout\CustomerData\AbstractItem">
-        <plugin name="change_minicart_image" type="Azguards\CustomProductImage\Plugin\Minicart\AfterGetItemData"/>
+        <plugin name="change_minicart_image" type="Azguards\CustomProductImage\Plugin\GetItemData"/>
     </type>
 
     <preference for="Azguards\CustomProductImage\Api\ProductTypeInterface" type="Azguards\CustomProductImage\Model\ProductType"/>
