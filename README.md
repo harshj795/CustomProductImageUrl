@@ -1,5 +1,6 @@
 Custom Attribute product_type will be created and value will be update from admin 
 
+Working Screenshoot share in Document Folder
 
 Updating Product Type via REST API
 
